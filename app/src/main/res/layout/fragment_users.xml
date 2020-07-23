@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UsersFragment">
+
+    <EditText
+        android:id="@+id/edt_userFragment_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search ... "
+        android:layout_margin="8dp"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_usersFragment_usersList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edt_userFragment_search"/>
+
+</RelativeLayout>

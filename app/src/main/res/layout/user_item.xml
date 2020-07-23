@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_userItem_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/txt_userItem_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_userItem_profile"
+            android:text="username"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:textColor="@android:color/black"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_userItem_on"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="#05df29"
+            android:layout_below="@id/txt_userItem_username"
+            android:layout_toRightOf="@id/img_userItem_profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-15dp"
+            android:visibility="gone"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_userItem_off"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="#bfbfbf"
+            android:layout_below="@id/txt_userItem_username"
+            android:layout_toRightOf="@id/img_userItem_profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/last_msg"
+            android:layout_below="@+id/txt_userItem_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_userItem_profile"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:maxLines="1"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
