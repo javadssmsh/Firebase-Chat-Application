@@ -1,7 +1,7 @@
-# Firebase-Chat-Application
+# Firebase Chat Application
 Kotlin Chat Application using Firebase
 
-#ُScreen Shot
+# Screen Shot
 
 ![3](https://user-images.githubusercontent.com/38455574/88343556-e4ef7000-cd56-11ea-9500-985191ade718.PNG)
 ![4](https://user-images.githubusercontent.com/38455574/88343560-e6b93380-cd56-11ea-9fe8-b5429015644f.PNG)
